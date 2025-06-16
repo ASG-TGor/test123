@@ -1,0 +1,97 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Pakete ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{amsmath, amssymb}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% --- Seitenränder ---
+\geometry{a4paper, top=3cm, bottom=3cm, left=3.5cm, right=2.5cm}
+
+% --- Zeilenabstand ---
+\onehalfspacing
+
+% --- Kopf-/Fußzeile ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Seminararbeit}
+\fancyhead[R]{\thepage}
+
+% --- Titelinformationen ---
+\title{Titel der Seminararbeit}
+\author{Max Mustermann \\
+Matrikelnummer: 1234567 \\
+Universität Musterstadt \\
+Fachbereich: Beispielwissenschaft}
+\date{\today}
+
+\begin{document}
+
+% --- Titelseite ---
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    {\LARGE\bfseries Titel der Seminararbeit \par}
+    \vspace{2cm}
+    {\large Max Mustermann \par}
+    \vspace{0.5cm}
+    Matrikelnummer: 1234567 \par
+    Fachbereich: Beispielwissenschaft \par
+    Universität Musterstadt \par
+    \vfill
+    \today
+\end{titlepage}
+
+% --- Inhaltsverzeichnis ---
+\tableofcontents
+\newpage
+
+% --- Einleitung ---
+\section{Einleitung}
+Dies ist ein Beispieltext für eine Seminararbeit. In der Einleitung wird das Thema eingeführt und die Zielsetzung der Arbeit erläutert. \par
+„Dies ist ein Zitat als Beispiel.“\footnote{Max Beispiel, *Beispielhafte Quellenangabe*, 2023.}
+
+% --- Hauptteil ---
+\section{Theoretischer Hintergrund}
+Hier folgt eine theoretische Erläuterung des Themas. Mathematische Formeln können wie folgt eingefügt werden:
+\[
+    E = mc^2
+\]
+Auch Abbildungen lassen sich einfügen:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{example-image}
+    \caption{Beispielabbildung}
+\end{figure}
+
+\section{Analyse und Diskussion}
+Hier kann die Analyse stattfinden. Zum Beispiel:
+\begin{itemize}
+    \item Erste Beobachtung
+    \item Zweite Beobachtung
+    \item Dritte Beobachtung
+\end{itemize}
+
+% --- Fazit ---
+\section{Fazit}
+Das Fazit fasst die wichtigsten Erkenntnisse zusammen und gibt ggf. einen Ausblick.
+
+% --- Literaturverzeichnis ---
+\newpage
+\section*{Literaturverzeichnis}
+\begin{itemize}
+    \item Max Beispiel: \textit{Beispielhafte Quellenangabe}. Musterverlag, 2023.
+\end{itemize}
+
+\end{document}
+
